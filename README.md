@@ -4,5 +4,5 @@ This program allows users to add items, set quantity and priority levels, and so
 
 ## Videos
 
-[Code Walkthrough] - Coming Soon
-[Code Demo] - Coming Soon
+- [Code Walkthrough] - Coming Soon
+- [Code Demo] - Coming Soon
