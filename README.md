@@ -1,8 +1,10 @@
-# Welcome to my Shopping List app 👋
+# Welcome to my Shopping List app
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+=======
 
-This version is not yet functional
+# Shopping List App
+
+This program allows users to add items, set quantity and priority levels, and sort through an infinitly expanding list of grocery and non grocery items.
 
 ## Get started
 
@@ -17,3 +19,10 @@ This version is not yet functional
    ```bash
    npx expo start
    ```
+
+   =======
+
+## Videos
+
+- [Code Walkthrough] - Coming Soon
+- [Code Demo] - Coming Soon
