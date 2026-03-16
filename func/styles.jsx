@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#196b24",
     padding: 15,
     borderRadius: 12,
+    borderColor: "black",
   },
   label: {
     fontWeight: "bold",
@@ -50,10 +51,10 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: "#f3f4f6",
     padding: 12,
-    borderRadius: 8,
+    borderRadius: 1,
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "black",
   },
   button: {
     backgroundColor: "#4AA159",
@@ -62,14 +63,29 @@ const styles = StyleSheet.create({
     alignItems: "right",
     margin: 5,
   },
+  buttonText: {
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
   priorityButton: {
     flex: 1,
     padding: 10,
     marginHorizontal: 2,
     borderWidth: 1,
-    borderColor: "#016630",
+    borderColor: "black",
     borderRadius: 8,
     alignItems: "center",
+    elevation: 10,
+  },
+  priorityButtonPressed: {
+    borderWidth: 2,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
+    elevation: 10,
+    transform: [{ scale: 1.1 }],
   },
   row: {
     flexDirection: "row",
@@ -123,11 +139,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   modalButton: {
-    flex: 1,
     padding: 10,
     backgroundColor: "#4CAF50",
     borderRadius: 5,
     marginHorizontal: 5,
+    justifyContent: "center",
+    alignItems: "center",
   },
   saveButton: {
     backgroundColor: "#4AA159",
@@ -139,6 +156,14 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "bold",
     fontSize: 16,
+  },
+  outline: {
+    fontSize: 18,
+    fontWeight: "bold",
+    padding: 5,
+    textShadowColor: "rgba(0, 0, 0, 1)",
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 2,
   },
 });
 

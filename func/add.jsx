@@ -1,4 +1,6 @@
-export const addItem = (item) => {
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+export const addItem = async (item) => {
   const itemObject = {
     id: Date.now().toString(),
     content: item.newItem,
@@ -8,7 +10,14 @@ export const addItem = (item) => {
     dateAdded: new Date().toISOString(),
   };
 
-  item.setItems((prevItems) => [...prevItems, itemObject]);
+  const updatedItems = [...item.items, itemObject];
+  item.setItems(updatedItems);
+
+  try {
+    await AsyncStorage.setItem("@shopping_list", JSON.stringify(updatedItems));
+  } catch (e) {
+    console.error("Error saving item", e);
+  }
 
   item.setNewItem("");
   item.setImportant(1);
