@@ -24,5 +24,5 @@ This program allows users to add items, set quantity and priority levels, and so
 
 ## Videos
 
-- [Code Walkthrough] - Coming Soon
-- [Code Demo] - Coming Soon
+- [Code Walkthrough] - (https://youtu.be/u16Tz5Ix70o)
+- [Code Demo] - (https://youtube.com/shorts/mL1gZS5rfSs?feature=share)
